@@ -1,0 +1,23 @@
+body{
+  
+
+font-family: adobe-caslon-pro, serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+margin: 0px;
+
+text-align: center;
+
+background-color: black;
+}
+
+p{
+
+    color: white;
+    font-size: 5em;
+    line-height: 5em;
+}
+
