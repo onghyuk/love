@@ -14,10 +14,8 @@ text-align: center;
 background-color: black;
 }
 
-p{
-
-    color: white;
-    font-size: 3em;
-    line-height: 2em;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 

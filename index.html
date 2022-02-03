@@ -5,21 +5,50 @@
     <title>love</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jij7rxg.css">
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'jas2nim',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
+   
 </head>
 <body>
-    <p>가끔</p>
-    <p>들러주세요.</p>
-    <p>조금씩</p>
-    <p>소식을 전하겠습니다.</p>
+    <div class="wrapper">
+            <div class="container">
+              <div class="list">
+
+              </div>
+
+              <div class="videowrapper">
+                <html>
+                  
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div id="twitch-embed"></div>
+                
+                   
+                  
+                </html>
+              </div>
+
+              <div class="calender">
+
+              </div>
+            </div>
+  </div>
 </body>
+
+ <!-- Load the Twitch embed script -->
+ <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                
+ <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
+ <script type="text/javascript">
+   var embed = new Twitch.Embed("twitch-embed", {
+     width: 854,
+     height: 480,
+     channel: "onghyuk",
+     layout: "video",
+     autoplay: false,
+     parent: ["embed.example.com", "othersite.example.com"]
+   });
+
+   embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+     var player = embed.getPlayer();
+     player.play();
+   });
+ </script>
 </html>
