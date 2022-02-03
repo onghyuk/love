@@ -5,29 +5,87 @@
     <title>love</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jij7rxg.css">
-   
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ksg1bal',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    
+    
 </head>
 <body>
     <div class="wrapper">
+            <div class="header">
+              <p>&lt;낯선 청중 앞에서&gt; 2과 또렷하게 말하기</p>
+            </div>
+
             <div class="container">
-              <div class="list">
-
-              </div>
-
               <div class="videowrapper">
-                <html>
-                  
-                    <!-- Add a placeholder for the Twitch embed -->
-                    <div id="twitch-embed"></div>
                 
-                   
                   
-                </html>
+                <!-- Add a placeholder for the Twitch embed -->
+                <div id="twitch-embed"></div>
+
+
+                
+                <div class="text">
+               <p>
+               연습 문제: 주어진 텍스트를 낭독합니다. 인터넷 브라우저는 낭독의 조언자로, 텍스트를 올바로 낭독하고 있는지 검사합니다. 단어 혹은 문장이 올바로 인식되지 않으면 잘못 인식된 부분을 반복해 낭독합니다. 단, 3번 이상 반복하지 않습니다. 
+               </p>
+               <p>모든 텍스트가 올바로 인식될 수 있도록 반복해 연습합니다. 몸에 익은 낭독의 습관을 버려야 할 수 있습니다. 
+                입을 크게 벌리고 한 음절 한 음절을 힘주어 발음합니다. </p>
+                <p>그럼에도 인터넷 브라우저가 텍스트를 온전히 인식하지 못한다면, 뒤틀리며 기록되는 텍스트의 원형을 증언해 줄 이가 필요할 것입니다. 그런 상황에는 낭독의 증인이 되어줄 청중을 찾습니다. 
+                </p>
+              
               </div>
+          </div>
+
+
+              <div class="textContainer">
+              <div class="list">
+                <ol>
+                  <li>올바른 발음</li>
+                  <li><mark>또렷하게 말하기</mark></li>
+                  <li>유창하게 말하기</li>
+                  <li>적절한 멈춤</li>
+                  <li><del>올바른 의미 강세</del></li>
+                  <li><del>주된 사상의 강조</del></li>
+                  <li>적합한 음량</li>
+                  <li>변조</li>
+                  <li>열정</li>
+                  <li>따듯함과 느낌</li>
+                  <li><del>몸짓과 표정</del></li>
+                  <li>눈의 접촉</li>
+                  <li>자연스러움</li>
+                  <li>훌륭한 개인 외모</li>
+                  <li>침착성</li>
+                  <li>마이크 사용</li>
+
+                </ol>
+              </div>
+
+             
 
               <div class="calender">
-
+                
+                <ul>
+                  <li>목</li>
+                  <li>금</li>
+                  <li>토</li>
+                  <li>2.10-2.19</li>
+                  <li>pm7:30</li>
+                  
+                  
+                </ul>
               </div>
+
+            </div>
             </div>
   </div>
 </body>
@@ -38,8 +96,8 @@
  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
  <script type="text/javascript">
    var embed = new Twitch.Embed("twitch-embed", {
-     width: 854,
-     height: 480,
+     width: "100%",
+     height: "100%",
      channel: "onghyuk",
      layout: "video",
      autoplay: false,
@@ -51,4 +109,6 @@
      player.play();
    });
  </script>
+
+
 </html>
